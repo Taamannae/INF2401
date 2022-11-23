@@ -6,6 +6,7 @@ import {Sidebar} from './features/Sidebar'
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Header from './features/Header';
 import Articles from './Articles';
+import CompanyGuides from './CompanyGuides/CompanyGuides';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" exact component={Home} />
               <Route path="/mentors" exact component={Mentors} />
               <Route path="/articles" exact component={Articles} />
+              <Route path="/guide" exact component={CompanyGuides} />
         </div>
       </div>
     </div>
