@@ -5,9 +5,9 @@ import Masonry from 'react-masonry-css'
 
 const ARTICLES = [
   {
-    authorImage: "./user1.png",
+    authorImage: "./company/comp1.svg",
     bgImage: "./companyArt/compA1.png",
-    title: "5 tips for UX interviews",
+    title: "Interaction Designer",
     preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
     bgHeight: "200px",
     company: 'Google',
@@ -15,107 +15,69 @@ const ARTICLES = [
     difficulty: '4.78/5'
   },
   {
-    authorImage: "./user1.png",
+    authorImage: "./company/comp2.svg",
     bgImage: "./companyArt/compA2.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
+    title: "Product Designer",
+    preview: "We value great design and prioritize it across every single thing we build at Meta. From the internationally recognized Like icon to our mobile platform, all of our products feature simple human centered designs. Every product designer and content designer researches, tests, and iterates each design to ensure we launch beautiful products with a seamless user experience.",
     bgHeight: "100px",
-    company: 'Google',
+    company: 'Meta',
     interviews: '5',
     difficulty: '4.78/5'
   }, {
-    authorImage: "./user1.png",
+    authorImage: "./company/comp3.svg",
     bgImage: "./companyArt/compA3.png",
-    title: "5 tips for UX interviews",
+    title: "UX Designer",
+    preview: "Airbnb Design is a cross-disciplinary group of experience and production designers, researchers, technologists, writers and content strategists, graphic designers, filmmakers, producers, interior architects, project managers, photographers and more.",
+    bgHeight: "150px",
+    company: 'AirBnB',
+    interviews: '5',
+    difficulty: '4.78/5'
+  },
+  {
+    authorImage: "./company/comp4.svg",
+    bgImage: "./companyArt/compA4.png",
+    title: "Product Designer",
+    preview: "The Netflix Experience Design Team (XD) is responsible for the design of all Netflix products across web, mobile and television screens. Our team consists of highly specialized Visual Designers, Interaction Designers, Prototypers, and Design Hybrids, working to innovate and improve the user interfaces of over 1000 devices.",
+    bgHeight: "100px",
+    company: 'Netflix',
+    interviews: '5',
+    difficulty: '4.78/5'
+  }, {
+    authorImage: "./company/comp1.svg",
+    bgImage: "./companyArt/compA1.png",
+    title: "Product Designer",
+    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
+    bgHeight: "200px",
+    company: 'Google',
+    interviews: '5',
+    difficulty: '4.78/5'
+  },
+  {
+    authorImage: "./company/comp2.svg",
+    bgImage: "./companyArt/compA2.png",
+    title: "Product Designer",
+    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
+    bgHeight: "100px",
+    company: 'Meta',
+    interviews: '5',
+    difficulty: '4.78/5'
+  }, {
+    authorImage: "./company/comp3.svg",
+    bgImage: "./companyArt/compA3.png",
+    title: "Product Designer",
     preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
     bgHeight: "150px",
-    company: 'Google',
+    company: 'AirBnB',
     interviews: '5',
     difficulty: '4.78/5'
   },
   {
-    authorImage: "./user1.png",
+    authorImage: "./company/comp4.svg",
     bgImage: "./companyArt/compA4.png",
-    title: "5 tips for UX interviews",
+    title: "Product Designer",
     preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
     bgHeight: "100px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  }, {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA5.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "120px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  },
-  {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA6.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "100px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  }, {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA7.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "180px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  },
-  {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA8.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "100px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  }, {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA9.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "200px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  },
-  {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA1.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "100px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  }, {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA1.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "200px",
-    company: 'Google',
-    interviews: '5',
-    difficulty: '4.78/5'
-  },
-  {
-    authorImage: "./user1.png",
-    bgImage: "./companyArt/compA1.png",
-    title: "5 tips for UX interviews",
-    preview: "Intuitive, beautiful, user-centered design is key to the success of Google’s products. Our passionate, interdisciplinary UX specialists and designers work across platforms to create powerful visuals that...",
-    bgHeight: "100px",
-    company: 'Google',
+    company: 'Netflix',
     interviews: '5',
     difficulty: '4.78/5'
   },
