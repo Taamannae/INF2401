@@ -18,6 +18,8 @@
 
 .main-content-inner {
   flex: 1;
+  overflow: scroll;
+  padding: 20px 32px;
 }
 
 .flex {
@@ -26,6 +28,10 @@
 
 .flex-1 {
   flex: 1;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .user-avatar {
@@ -53,6 +59,16 @@ h1 {
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  color: var(--white);
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
   color: var(--white);
   margin: 0;
 }
@@ -93,4 +109,27 @@ h1 {
   100% {
     transform: translateY(0px);
   }
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -16px;
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 16px;
+  /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column>div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
 }

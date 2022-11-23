@@ -1,4 +1,7 @@
 import React from 'react';
+import "./Sidebar.css";
+import { useLocation } from "react-router-dom";
+
 
 import FeatherIcons from 'feather-icons-react'
 
@@ -37,12 +40,17 @@ const NAVITEMS = [
 
 ]
 
-function renderNavItem(icon, path, title, id) {
+function renderNavItem(icon, path, title, id, location) {
+    const active = location === path;
+    const activeClass = active ? 'nav-active' : null
+
+    console.log(active, location, path);
+    
     if (id === "div") {
-        return <div className='sidebar-div'/>
+        return <div key="div" className='sidebar-div'/>
     }
     return(
-        <a key={id} href={path} className='nav-item'>
+        <a key={id} href={path} className={'nav-item ' + activeClass}>
             <FeatherIcons icon={icon} size="16"/>
             {title}
         </a>
@@ -50,7 +58,9 @@ function renderNavItem(icon, path, title, id) {
 
 }
 
+
 export function Sidebar() {
+    const location = useLocation();
     return (
         <div className='side-bar'>
             <div>
@@ -62,7 +72,7 @@ export function Sidebar() {
             </div>
             <div className='side-bar-content'>
             {NAVITEMS.map(item => {
-                return(renderNavItem(item.icon, item.path, item.title, item.id))
+                return(renderNavItem(item.icon, item.path, item.title, item.id, location.pathname))
             })}
             </div>
         </div>
