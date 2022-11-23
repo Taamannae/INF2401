@@ -1,6 +1,63 @@
 .App {
-  text-align: center;
+  display: flex;
+  background-color: var(--grey--700);
+  height: 100vh;
 }
+
+.main--content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 20px 32px;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+
+.main-content-inner {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.user-avatar {
+  border-radius: 100px;
+  width: 32px;
+}
+
+.nav-header-item {
+  color: var(--white);
+  padding: 8px;
+  background-color: var(--grey--600);
+  border-radius: 8px;
+  display: inline-flex;
+}
+
+.header-right-section {
+  display: flex;
+  gap: 8px;
+}
+
+
+h1 {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--white);
+  margin: 0;
+}
+
+
 
 .App-logo {
   height: 40vmin;
@@ -14,12 +71,12 @@
 }
 
 .App-header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  flex: 1;
 }
 
 .App-link {
