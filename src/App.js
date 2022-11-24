@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Header from './features/Header';
 import Articles from './Articles';
 import CompanyGuides from './CompanyGuides/CompanyGuides';
+import Booking from './Booking';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path="/mentors" exact component={Mentors} />
               <Route path="/articles" exact component={Articles} />
               <Route path="/guide" exact component={CompanyGuides} />
+              <Route path="/booking" exact component={Booking} />
         </div>
       </div>
     </div>

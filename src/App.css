@@ -141,3 +141,126 @@ h3 {
   /* change div to reference your elements you put in <Masonry> */
   margin-bottom: 16px;
 }
+
+.home-section {
+  gap: 16px;
+}
+
+.home-title {
+  margin: 0;
+  font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: var(--grey--300)
+}
+
+.home-title-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.home.company-guide {
+  background-color: var(--grey--600);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.home.company-guide img.company-logo {
+  width: 34px;
+  margin-right: 12px;
+}
+
+.home.company-guide h3, .home.company-guide h5 {
+  font-size: 16px
+}
+
+.verified {
+  margin-left: 4px;
+}
+
+.companies-guides {
+  gap: 16px;
+}
+
+.home.upcoming {
+  padding: 20px;
+  background: var(--grey--600);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  max-width: 700px;
+  min-width: 450px;
+}
+
+.highlighted-article {
+  flex: 1;
+  padding: 20px;
+  background-color: #0045CA;
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  min-height: 300px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.highlighted-article:hover {
+  transform: scale(1.02);
+}
+
+.home.main-top {
+  gap: 16px;
+}
+
+.home.session-item {
+  margin-top: 16px;
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.home.session-item img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.home.session-item .session-title {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--white);
+  margin: 0 0 8px 0;
+}
+
+.home.session-item .session-subtitle {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--grey--300);
+  margin: 0;
+}
+
+.highlighted-article h2 {
+  font-size: 36px;
+  line-height: 120%;
+  max-width: 350px;
+}
+
+.main-article-auther {
+  max-width: 300px;
+}
+
+.main-article-auther p{
+  margin: 16px 0 0 0;
+  color: var(--white);
+}

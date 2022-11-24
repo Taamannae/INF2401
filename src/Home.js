@@ -87,9 +87,119 @@ const ARTICLES = [
   },
 ]
 
+const COMPANIES = [
+  {
+    image: './company/comp1.svg',
+    title: 'Interaction Designer',
+    company: 'Google',
+  }, {
+    image: './company/comp2.svg',
+    title: 'Product Designer',
+    company: 'Meta',
+  }, {
+    image: './company/comp3.svg',
+    title: 'UX Designer',
+    company: 'AirBnB',
+  }, {
+    image: './company/comp4.svg',
+    title: 'Product Designer',
+    company: 'Netflix',
+  },
+]
+
+const SESSIONS = [
+  {
+    sessionType: 'Whiteboarding Session',
+    pic: "./mentor/ment1.png",
+    name: "Jane Cooper",
+    day: '28',
+    month: 'Nov'
+  }, {
+    sessionType: 'Portfolio Presentation',
+    pic: "./mentor/ment2.png",
+    name: "Wade Warren",
+    day: '29',
+    month: 'Nov'
+  }, {
+    sessionType: 'App Critique',
+    pic: "./mentor/ment3.png",
+    name: "Cody Fisher",
+    day: '01',
+    month: 'Dec'
+  },
+]
+
 function App() {
   return (
-    <div>
+    <div className='flex flex-column home-section'>
+      <div className='flex home main-top'>
+        <div className='home upcoming'>
+          <div className='flex flex-1'>
+            <p className='flex-1 home-title'>Upcoming Sessions</p>
+            <a href="/booking" className='home-title-link'>See All</a>
+          </div>
+
+          {SESSIONS.map(item=> {
+            return(
+              <div className='home session-item'>
+                <div className='flex-1'>
+                  <p className='session-title'>{item.sessionType}</p>
+                  <div className='flex align-center review-person'>
+                    <img src={item.pic} className='review-image' alt="" />
+                    <p className='session-subtitle'>{item.name}</p>
+                  </div>
+                </div>
+
+                <div className='flex flex-column align-center'>
+                    <p className='session-title'>{item.day}</p>
+                    <p className='session-subtitle'>{item.month}</p>
+                </div>
+              </div>
+            )
+          })}
+
+        </div>
+        <a href="#/" className='home highlighted-article flex flex-column' style={{ backgroundImage: "url('./main-article.svg')"}}>
+          <div className='flex-1'>
+            <img src="./mentor/main-art.png" alt=""/>
+
+          </div>
+          <div>
+            <h2>How to prep for design interviews</h2>
+            <div className='flex main-article-auther'>
+              <p className='flex-1'>By Jane Cooper</p>
+              <p>Read Now</p>
+            </div>
+          </div>
+
+        </a>
+
+      </div>
+      <div className='flex flex-1'>
+        <p className='flex-1 home-title'>Company Interview Guides</p>
+        <a href="/guide" className='home-title-link'>See All</a>
+      </div>
+
+      <div className='flex companies-guides'>
+        {COMPANIES.map(item=>{
+          return(
+            <div className='home company-guide flex align-center flex-1'>
+              <div><img src={item.image} className="company-logo" alt=""/></div>
+              <div>
+
+                <h3>{item.title}</h3>
+                <h5 className='flex align-center'>{item.company} · Verified <img src="./verified.svg" className='verified' alt="" /></h5>
+              </div>
+            </div>
+          )
+        })}
+
+      </div>
+
+      <div className='flex flex-1'>
+        <p className='flex-1 home-title'>General Articles & Advice</p>
+        <a href="/articles" className='home-title-link'>See All</a>
+      </div>
 
       <Masonry
         breakpointCols={4}
