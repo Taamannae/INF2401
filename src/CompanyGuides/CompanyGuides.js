@@ -1,7 +1,7 @@
 import React from 'react';
 import './CompanyGuides.css';
 import CompanyCard from './CompanyCard/CompanyCard';
-import Masonry from 'react-masonry-css'
+import Masonry from 'react-masonry-css';
 
 const ARTICLES = [
   {

@@ -37,3 +37,7 @@ body {
   font-weight: 500;
   src: url('./assets/fonts/Graphik-Semibold.otf');
 }
+
+a:hover{
+  color: var(--white);
+}

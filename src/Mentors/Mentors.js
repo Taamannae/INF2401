@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Mentors.css';
 import FeatherIcons from 'feather-icons-react'
+import Dialog from '../features/Dialog/Dialog';
 
 
 const ARTICLES = [
@@ -85,9 +86,10 @@ const ARTICLES = [
   }
 ]
 
-function mentor(bg, name, role, company, yoe){
+function mentor(bg, name, role, company, yoe, handleShow){
+
   return(
-    <button onClick="" className='mentor-cont' 
+    <button onClick={handleShow} className='mentor-cont' 
       style={{backgroundImage: `url("${bg}"` }}>
 
         <div className='mentor-content'>
@@ -114,14 +116,24 @@ function mentor(bg, name, role, company, yoe){
 }
 
 function Mentors() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
+    <div>
     <div className='mentors-cont'>
       {
         ARTICLES.map(item => {
-        return(mentor(item.bgImage, item.name, item.role, item.company, item.yoe)
+        return(mentor(item.bgImage, item.name, item.role, item.company, item.yoe, handleShow)
 
         )
       })}
+    </div>
+    <Dialog
+      show={show}
+      handleClose={handleClose}
+      />
     </div>
   );
 }

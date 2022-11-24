@@ -1,0 +1,292 @@
+.fade.modal.show {
+    backdrop-filter: blur(10px);
+}
+
+.modal-content {
+    background-color: var(--grey--700);
+}
+
+.modal.show .modal-dialog {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.model-card-bg {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.model .card-bg {
+    width: 100%;
+    background-size: cover;
+}
+
+
+.model .menu {
+    filter: url("#goo");
+    margin-top: -90px;
+}
+
+.model .menu-item,
+.model .menu-open-button {
+    background: var(--grey--700);
+    border-radius: 100px;
+    width: 146px;
+    height: 146px;
+    margin-bottom: -90px;
+    margin-left: 20px;
+}
+
+.model .card-avatar {
+    background: var(--grey--700);
+    border-radius: 100px;
+    width: 121px;
+    height: 121px;
+    margin-top: 11px;
+    margin-left: 11px;
+}
+
+.model .card-content {
+    background: var(--grey--700);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+    gap: 16px;
+}
+
+.model .menu-rect {
+    background: var(--grey--700);
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+
+}
+
+.model .menu-open {
+    display: none;
+}
+
+.model .card-content h5 {
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.white-text {
+    color: var(--white) !important;
+}
+.modal-dialog {
+    max-width: 1100px;
+}
+.dialog-content {
+    position: relative;
+}
+
+.model-header{
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+    }
+
+.model-header h1{
+font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.model-header p {
+    color: var(--grey--300);
+}
+
+.social {
+    display: flex;
+    gap: 8px;
+}
+
+.model-content-inner {
+    display: flex;
+    gap: 40px;
+    margin: 32px;
+    align-items: flex-start;
+}
+
+.model-content-inner-left {
+    flex: 1;
+}
+
+.model-content-inner-left .mentor-title, .model-content-inner-right .mentor-title {
+    min-width: 148px;
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--grey--300);
+
+}
+
+.model-content-inner-right {
+    min-width: 360px;
+    padding: 20px;
+    background: var(--grey--600);
+    border-radius: 12px;
+
+}
+
+.mentor-info-content {
+    color: var(--white);
+}
+
+.model-close {
+
+position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 16px;
+    top: 16px;
+
+    background: rgba(31, 31, 31, 0.5);
+    /* Grey/500 */
+
+    border: 1px solid #3D3D3D;
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 100px;
+}
+
+.time-next {
+
+    width: 44px;
+    height: 44px;
+    right: 16px;
+    top: 16px;
+
+    background: var(--grey--600);
+    /* Grey/500 */
+
+    border: 1px solid #3D3D3D;
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 100px;
+}
+
+.model-content-inner-right .btn {
+    border-radius: 8px !important;
+    display: flex !important;
+    gap: 8px;
+    flex-direction: column !important;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+
+}
+.model-content-inner-right .btn-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: unset;
+    border-color: white;
+}
+
+.toggle-day {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+
+    color: var(--grey--300);
+}
+.toggle-date {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    margin: 0;
+
+    /* White */
+
+    color: var(--white);
+}
+.toggle-slot {
+font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+    margin: 0;
+    /* identical to box height */
+
+    text-align: center;
+    color: var(--white);
+}
+
+.mentor-times-choices .btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px;
+
+}
+
+.meeting-times {
+    gap: 16px;
+}
+
+.model-content-inner-right .mentor-times-choices .mentor-info-content {
+    margin-bottom: 4px;
+}
+
+.btn.btn-primary {
+    background-color: var(--grey--500) !important;
+    text-align: center !important;
+    align-items: center;
+}
+
+.experience .mentor-info-content {
+    margin-bottom: 0px;
+}
+
+.experience .dates {
+    text-align: right;
+}
+
+.review-image {
+    width: 20px;
+    border-radius: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.reviews .review .mentor-title {
+    margin: 0;
+    margin-left: 16px;
+}
+
+.reviews .review .mentor-info-content {
+    margin-bottom: 8px;
+}
