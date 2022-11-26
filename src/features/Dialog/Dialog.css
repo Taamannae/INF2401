@@ -461,3 +461,50 @@ textarea.form-control::placeholder {
 .mentor-confirm-others .mentor-cont {
     min-height: 300px;
 }
+
+.join-call-dialog {
+    width: fit-content;
+    margin-top: 20vh;
+}
+.join-call-dialog .preview-container {
+    padding: 20px;
+    display: flex;
+    gap: 32px;
+}
+
+.preview-video {
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.mentor-dialog-icons.setting {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: none;
+}
+
+.mentor-dialog-icons.video {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    border: none;
+}
+
+.mentor-dialog-icons.mic {
+    position: absolute;
+    bottom: 8px;
+    right: 60px;
+    border: none;
+}
+
+.join-call-footer {
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+
+}

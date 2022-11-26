@@ -48,7 +48,10 @@ function navButton(icon) {
 
 export default function Header() {
     const location = useLocation();
-    const found = NAVITEMS.find(x => x.path === location.pathname)
+    let found = {title: 'Hello'}
+    if (!location.pathname.includes('maincall')) {
+         found = NAVITEMS.find(x => x.path === location.pathname)
+    }
     return (
         <div className='header flex'>
             <div className='flex-1'><h1>{found.title}</h1></div>

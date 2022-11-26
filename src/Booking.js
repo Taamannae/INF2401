@@ -1,7 +1,8 @@
 import FeatherIcon from 'feather-icons-react/build/FeatherIcon';
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import "./Booking.css"
+import JoinCall from './features/Dialog/JoinCall';
 
 const SESSIONS = [
   {
@@ -26,6 +27,10 @@ const SESSIONS = [
 ]
 
 function Booking() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true)
+
   return (
     <div className='booking flex flex-column'>
       <div className='flex home main-top'>
@@ -55,7 +60,7 @@ function Booking() {
 
                 <div className='flex booking-sess-info-options'>
                   <div className='flex gap-8p flex-1'>
-                    <Button variant="primary" onClick=''>
+                    <Button variant="primary" onClick={handleShow}>
                       Join Call
                     </Button>
                     <Button variant="primary" onClick=''>
@@ -74,6 +79,9 @@ function Booking() {
           })}
 
         </div>
+      <JoinCall
+        show={show}
+        handleClose={handleClose} />
     </div>
   );
 }
