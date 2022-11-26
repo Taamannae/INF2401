@@ -5,6 +5,7 @@ import { ReactSketchCanvas } from 'react-sketch-canvas';
 import { ChromePicker } from "react-color";
 import Tooltip from 'react-bootstrap/Tooltip';
 import Overlay from 'react-bootstrap/Overlay';
+import Accordion from 'react-bootstrap/Accordion';
 
 const styles = {
 };
@@ -74,6 +75,21 @@ function WhiteboardingCall() {
           
         />
         <div className='dot-bg' style={{ backgroundImage:"url('./dot.svg')"}}></div>
+
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Whiteboard Prompt</Accordion.Header>
+            <Accordion.Body>
+              Design an art history app for elderly couples in Brussels
+
+              <a href="#/" className='shuffle'>
+                <FeatherIcons icon={'message-circle'} size="16" color="#979797"/> Shuffle
+              </a>
+
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+
       </div>
 
       <div style={{ backgroundImage: 'url("./mentor/you.jpeg")'}} className="mini-preview-call"></div>
