@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CompanyGuides.css';
 import CompanyCard from './CompanyCard/CompanyCard';
 import Masonry from 'react-masonry-css';
+import CompanyGuidePopup from '../features/Dialog/CompanyGuidePopup';
 
 const ARTICLES = [
   {
@@ -84,6 +85,10 @@ const ARTICLES = [
 ]
 
 function CompanyGuides() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true)
+
   return (
       <Masonry
         breakpointCols={4}
@@ -101,9 +106,14 @@ function CompanyGuides() {
               company={x.company}
               interviews={x.interviews}
               difficulty={x.difficulty} 
+              handleShow={handleShow}
             />
           );
         })}
+
+        <CompanyGuidePopup 
+        show={show}
+        handleClose={handleClose} />
 
       </Masonry>
   );

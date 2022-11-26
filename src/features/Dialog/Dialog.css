@@ -540,3 +540,72 @@ textarea.form-control::placeholder {
     line-height: 140%;
     color: var(--grey--300);
 }
+
+.company-guide-header {
+    position: relative;
+    margin: auto;
+    top: unset;
+    left: unset;
+    width: 100%;
+}
+
+.company.mentor-info-content {
+    color: var(--grey--200);
+}
+.company-guide-content {
+    margin-top: 0;
+}
+
+.company-compt {
+    max-width: 800px;
+}
+
+.company-compt .modal-content {
+    background-color: rgb(28 28 28) !important;
+}
+
+.company-guide-content h1{
+    margin-bottom: 8px;
+}
+
+.company-verified-avatar {
+    width: 42px;
+    height: 42px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1000px;
+    border: 4px solid rgb(28 28 28);
+}
+
+.company-verfied-group {
+    display: flex;
+    gap: -15px;
+}
+
+.company-verified-avatar:not(:first-of-type) {
+    margin-left: -15px;
+}
+
+.company-guide-header p {
+    margin-bottom: 4px;
+}
+
+.chip {
+    padding: 10px 16px;
+    gap: 10px;
+    background-color: var(--grey--800);
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 100px;
+    color: var(--grey--300);
+
+}
+
+.interview-chip {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}

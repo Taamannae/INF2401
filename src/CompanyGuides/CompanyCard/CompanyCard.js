@@ -3,7 +3,7 @@ import './CompanyCard.css';
 
 function CompanyCard(props) {
     return (
-        <div>
+        <button onClick={props.handleShow}className='company-button'>
             <div className='company-card'>
                 <div alt="" className="card-bg" style={{ backgroundImage: `url("${props.bgImage}"`, height: "100px"}} />
                 <div className='menu'>
@@ -44,7 +44,7 @@ function CompanyCard(props) {
 
                 </div>
             </div>
-        </div>
+        </button>
     );
 }
 

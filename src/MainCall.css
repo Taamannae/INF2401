@@ -55,6 +55,7 @@
   bottom: 16px;
   left: 16px;
   border-radius: 8px;
+  z-index: 99;
 }
 
 .main-call-options .model-close {
