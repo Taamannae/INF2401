@@ -508,3 +508,35 @@ textarea.form-control::placeholder {
     border-top: 1px solid var(--border-color);
 
 }
+
+.booking-confirm.review {
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.review-popup {
+    max-width: 500px;
+}
+
+.feedback-content {
+    padding: 0 20px 20px;
+}
+
+.feedback-question {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 4px;
+    color: var(--white);
+}
+
+.feedback-answer {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--grey--300);
+}

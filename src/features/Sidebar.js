@@ -14,7 +14,7 @@ const NAVITEMS = [
     },{
         icon: 'calendar',
         path: '/booking',
-        title: 'Your Booking',
+        title: 'Your Sessions',
         id: '1'
     },{
         icon: '',

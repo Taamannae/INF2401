@@ -39,3 +39,57 @@
     flex: 1;
     box-sizing: content-box;
 }
+
+.edit-icons-notif {
+    border: none;
+    background: none;
+}
+.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: var(--grey--600)
+}
+
+.notification-cont .tooltip-inner{
+    max-width: 400px;
+    border: 1px solid var(--border-color);
+    padding: 0;
+    border-radius: 12px;
+}
+
+.notif-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.notif-item {
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    gap: 16px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.red-dot {
+    width: 12px;
+    height: 12px;
+    background: #DF4F2F;
+    border-radius: 12px;
+}
+
+.notif-item p {
+    text-align: left;
+    font-size: 16px;
+}
+
+.notif-text {
+    text-align: left;
+}
+
+.notif-item.feedback {
+    background-color: var(--grey--600);
+    border: 0;
+    border-bottom: 1px solid var(--border-color);
+}
