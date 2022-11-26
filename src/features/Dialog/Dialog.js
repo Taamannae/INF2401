@@ -187,7 +187,7 @@ function Dialog(props) {
                             </ButtonGroup>
                         </div>
 
-                        <Button variant="primary" onClick={props.handleClose}>
+                        <Button variant="primary" onClick={props.handleMentorShow}>
                             Book Session
                         </Button>
                 </div>

@@ -290,3 +290,174 @@ font-family: 'Graphik';
 .reviews .review .mentor-info-content {
     margin-bottom: 8px;
 }
+
+.modal-dialog.mentor-dialog {
+    max-width: 500px;
+}
+
+.model-close.mentor-dialog-icons {
+    position: relative;
+    right: unset;
+    top: unset;
+}
+
+.mentor-model-header {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.mentor-model-card-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    opacity: 0.4;
+    filter: blur(10px);
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.mentor-book-prev {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.mentor-book-prev-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.mentor-book-prev-content .card-avatar {
+    margin: 0;
+    margin: auto;
+}
+
+.mentor-book-prev-content .mentor-stats h5{
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.mentor-book-prev-content * {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+.mentor-model-input-group {
+    padding: 20px;
+}
+
+.form-select {
+    background-color: var(--grey--600);
+    border: none;
+    color: #fff;
+    padding: 12px 34px 12px 16px;
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+        background-size: 16px 12px;
+}
+
+.form-label {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+
+    /* Grey/300 */
+
+    color: var(--grey--300)
+}
+
+textarea.form-control, textarea.form-control:focus  {
+    background-color: var(--grey--600);
+    border: none;
+    color: #fff;
+    resize: none;
+    height: 100px;
+}
+
+textarea.form-control::placeholder {
+    color: var(--grey--300);
+}
+
+.mentor-book-linkset {
+    padding: 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mentor-book-linkset .btn-link {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.booking-confirm.mentor-book-prev-content {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.booking-confirm.mentor-book-prev-content .card-avatar {
+    margin: 0;
+    width: 70px;
+    Height: 70px;
+    margin-right: 8px;
+}
+.booking-confirm.mentor-book-prev-content h3{
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.booking-confirm-info {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--grey--300);
+    margin: 16px 0;
+}
+
+.booking-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    background-color: var(--grey--500);
+    border-radius: 8px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.other-mentor-set {
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mentor-confirm-others {
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+}
+.mentor-confirm-others .mentor-cont {
+    min-height: 300px;
+}

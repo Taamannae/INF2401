@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Mentors.css';
 import FeatherIcons from 'feather-icons-react'
 import Dialog from '../features/Dialog/Dialog';
+import Mentor from '../features/Dialog/Mentor';
+import MentorConfirm from '../features/Dialog/MentorConfirm';
 
 
 const ARTICLES = [
@@ -117,9 +119,27 @@ function mentor(bg, name, role, company, yoe, handleShow){
 
 function Mentors() {
   const [show, setShow] = useState(false);
+  const [showMentor, setShowMentor] = useState(false);
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    setShow(true)
+    setShowMentor(false)
+
+  };
+
+  const handleMentorClose = () => setShowMentor(false);
+  const handleMentorShow = () => {
+      setShow(false)
+      setShowMentor(true)
+  };
+
+  const handleConfirmClose = () => setShowConfirm(false);
+  const handleConfirmShow = () => {
+    setShowMentor(false)
+    setShowConfirm(true)
+  };
   return (
     <div>
     <div className='mentors-cont'>
@@ -133,7 +153,17 @@ function Mentors() {
     <Dialog
       show={show}
       handleClose={handleClose}
+      handleMentorShow={handleMentorShow}
       />
+    <Mentor
+        show={showMentor}
+        handleShow={handleShow}
+        handleConfirmShow={handleConfirmShow}
+        handleClose={handleMentorClose}/>
+    <MentorConfirm
+      show={showConfirm}
+        handleShow={handleConfirmShow}
+      handleClose={handleConfirmClose} />
     </div>
   );
 }
