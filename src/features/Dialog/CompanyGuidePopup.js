@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Dialog.css';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import FeatherIcons from 'feather-icons-react';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
 
 
 function CompanyGuidePopup(props) {
