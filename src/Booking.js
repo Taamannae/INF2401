@@ -8,6 +8,8 @@ const SESSIONS = [
   {
     sessionType: 'Whiteboarding Session',
     pic: "./mentor/ment1.png",
+    link:'/whiteboarding',
+    id:"1",
     name: "Jane Cooper",
     date: 'Mon, Nov 28th',
     time: '1:00pm - 2:00pm'
@@ -15,12 +17,16 @@ const SESSIONS = [
     sessionType: 'Portfolio Presentation',
     pic: "./mentor/ment2.png",
     name: "Wade Warren",
+    id:'2',
+    link: '/maincall',
     date: 'Mon, Nov 28th',
     time: '1:00pm - 2:00pm'
   }, {
     sessionType: 'App Critique',
     pic: "./mentor/ment3.png",
     name: "Cody Fisher",
+    id: "2",
+    link: '/maincall',
     date: 'Mon, Nov 28th',
     time: '1:00pm - 2:00pm'
   },
@@ -28,8 +34,12 @@ const SESSIONS = [
 
 function Booking() {
   const [show, setShow] = useState(false);
+  const [callType, setCallType] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true)
+  const handleShow = (props) => {
+    setShow(true)
+    setCallType(props.target.id)
+  }
 
   return (
     <div className='booking flex flex-column'>
@@ -60,7 +70,7 @@ function Booking() {
 
                 <div className='flex booking-sess-info-options'>
                   <div className='flex gap-8p flex-1'>
-                    <Button variant="primary" onClick={handleShow}>
+                    <Button id={item.link} variant="primary" onClick={handleShow}>
                       Join Call
                     </Button>
                     <Button variant="primary" onClick=''>
@@ -81,6 +91,7 @@ function Booking() {
         </div>
       <JoinCall
         show={show}
+        callType={callType}
         handleClose={handleClose} />
     </div>
   );

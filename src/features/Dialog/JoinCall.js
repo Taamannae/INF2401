@@ -11,7 +11,7 @@ function JoinCall(props) {
         <Modal show={props.show} onHide={props.handleClose} dialogClassName="join-call-dialog">
             <div className="model">
                 <div className='mentor-model-header'>
-                    <h1>White Boarding w/ Jane Cooper</h1>
+                    <h1>Joining Session</h1>
                     <button className='model-close mentor-dialog-icons' onClick={props.handleClose}><FeatherIcons color="white" icon="x"/></button>
                 </div>
                 <div className='preview-container'>
@@ -31,7 +31,7 @@ function JoinCall(props) {
                         <h4>Joining Call as</h4>
                         <h2>Natalie Porsche</h2>
                     </div>
-                    <a href="/maincall" className="booking-button">Join Call</a>
+                    <a href={props.callType}className="booking-button">Join Call</a>
                 </div>
 
             </div>

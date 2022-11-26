@@ -9,6 +9,7 @@ import Articles from './Articles';
 import MainCall from './MainCall';
 import CompanyGuides from './CompanyGuides/CompanyGuides';
 import Booking from './Booking';
+import WhiteboardingCall from './WhiteboardingCall';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
               <Route path="/" exact component={Home} />
               <Route path="/maincall" exact component={MainCall} />
+              <Route path="/whiteboarding" exact component={WhiteboardingCall} />
               <Route path="/mentors" exact component={Mentors} />
               <Route path="/articles" exact component={Articles} />
               <Route path="/guide" exact component={CompanyGuides} />

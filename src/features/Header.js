@@ -49,7 +49,7 @@ function navButton(icon) {
 export default function Header() {
     const location = useLocation();
     let found = {title: 'Hello'}
-    if (!location.pathname.includes('maincall')) {
+    if (!location.pathname.includes('maincall') && !location.pathname.includes('whiteboarding')) {
          found = NAVITEMS.find(x => x.path === location.pathname)
     }
     return (
