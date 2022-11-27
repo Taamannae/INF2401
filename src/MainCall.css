@@ -269,6 +269,7 @@ background: rgb(23, 24, 27);
   background-color: rgb(116, 53, 53);
 }
 
-.join-bg + .fade.model.show {
-  display: flex;
+.join-bg + .fade.modal.show {
+  display: flex !important;
+  align-items: center;
 }
