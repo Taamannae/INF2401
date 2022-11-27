@@ -86,7 +86,7 @@ function WhiteboardingCall() {
               Design an <b>art history app</b> for <b>elderly couples</b> in Brussels
 
               <a href="#/" className='shuffle'>
-                <FeatherIcons icon={'rotate-cw'} size="16" color="#979797"/> Shuffle
+                <FeatherIcons icon={'rotate-cw'} size="16" color="currentColor"/> Shuffle
               </a>
 
             </Accordion.Body>
