@@ -53,7 +53,7 @@
   background-size: cover;
   position: absolute;
   bottom: 16px;
-  left: 16px;
+  right: 16px;
   border-radius: 8px;
   z-index: 99;
 }
@@ -263,4 +263,12 @@ background: rgb(23, 24, 27);
   margin-top: 8px;
   text-decoration: none;
 
+}
+
+.end-call {
+  background-color: rgb(116, 53, 53);
+}
+
+.join-bg + .fade.model.show {
+  display: flex;
 }

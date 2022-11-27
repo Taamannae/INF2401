@@ -58,8 +58,8 @@ function MentorConfirm(props) {
                         <h1>Other mentors</h1>
 
                             <div className='flex mentor-stats'>
-                                <button className='model-close mentor-dialog-icons'><FeatherIcons size="12px" color="white" icon="arrow-left" /></button>
-                                <button className='model-close mentor-dialog-icons'><FeatherIcons size="12px" color="white" icon="arrow-right" /></button>
+                                <button className='model-close mentor-dialog-icons'><FeatherIcons size="px" color="white" icon="arrow-left" /></button>
+                                <button className='model-close mentor-dialog-icons'><FeatherIcons size="px" color="white" icon="arrow-right" /></button>
                             </div>
                     </div>
 

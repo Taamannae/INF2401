@@ -464,8 +464,14 @@ textarea.form-control::placeholder {
 
 .join-call-dialog {
     width: fit-content;
-    margin-top: 20vh;
 }
+
+.join-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .join-call-dialog .preview-container {
     padding: 20px;
     display: flex;

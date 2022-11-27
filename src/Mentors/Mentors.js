@@ -8,6 +8,12 @@ import MentorConfirm from '../features/Dialog/MentorConfirm';
 
 const ARTICLES = [
   {
+    bgImage: "./mentor/ment6.png",
+    name: "Leslie Alexander",
+    role: "Product Designer",
+    yoe: "8",
+    company: 'Google'
+  }, {
     bgImage: "./mentor/ment1.png",
     name: "Jane Cooper",
     role: "Product Designer",
@@ -36,13 +42,6 @@ const ARTICLES = [
   }, {
     bgImage: "./mentor/ment5.png",
     name: "Darlene Robertson",
-    role: "Product Designer",
-    yoe: "8",
-    company: 'Google'
-  },
-  {
-    bgImage: "./mentor/ment6.png",
-    name: "Leslie Alexander",
     role: "Product Designer",
     yoe: "8",
     company: 'Google'

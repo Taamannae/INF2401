@@ -33,6 +33,9 @@ function WhiteboardingCall() {
         <h3> Whiteboarding Session | Jane Cooper</h3>
 
         <div className='social'>
+          <a href="/booking" className='nav-header-item participants end-call'>
+            <FeatherIcons icon={'phone-off'} size="16" /> Leave Call
+          </a>
           <a href="#/" className='nav-header-item participants'>
             <FeatherIcons icon={'message-circle'} size="16" />
           </a>
@@ -80,7 +83,7 @@ function WhiteboardingCall() {
           <Accordion.Item eventKey="0">
             <Accordion.Header>Whiteboard Prompt</Accordion.Header>
             <Accordion.Body>
-              Design an art history app for elderly couples in Brussels
+              Design an <b>art history app</b> for <b>elderly couples</b> in Brussels
 
               <a href="#/" className='shuffle'>
                 <FeatherIcons icon={'message-circle'} size="16" color="#979797"/> Shuffle
@@ -92,7 +95,7 @@ function WhiteboardingCall() {
 
       </div>
 
-      <div style={{ backgroundImage: 'url("./mentor/you.jpeg")'}} className="mini-preview-call"></div>
+      <div style={{ backgroundImage: 'url("./mentor/main-caller.jpg")'}} className="mini-preview-call"></div>
     </div>
   );
 }

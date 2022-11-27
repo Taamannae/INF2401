@@ -8,7 +8,9 @@ function JoinCall(props) {
 
 
     return (
-        <Modal show={props.show} onHide={props.handleClose} dialogClassName="join-call-dialog">
+        <Modal show={props.show} onHide={props.handleClose} 
+        backdropClassName="join-bg"
+        dialogClassName="join-call-dialog">
             <div className="model">
                 <div className='mentor-model-header'>
                     <h1>Joining Session</h1>
@@ -28,7 +30,7 @@ function JoinCall(props) {
 
                 <div className='join-call-footer flex'>
                     <div className='flex-1'>
-                        <h4>Joining Call as</h4>
+                        <h4>Joining call as</h4>
                         <h2>Natalie Porsche</h2>
                     </div>
                     <a href={props.callType}className="booking-button">Join Call</a>
