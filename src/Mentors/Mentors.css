@@ -80,8 +80,8 @@ h5 {
   margin: 0;
   font-family: 'Graphik';
   font-style: normal;
+  text-align: left;
   font-weight: 400;
-  font-size: 14px;
   line-height: 140%;
   color: var(--grey--300);
 

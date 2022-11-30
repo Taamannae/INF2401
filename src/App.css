@@ -264,3 +264,16 @@ h3 {
   margin: 16px 0 0 0;
   color: var(--white);
 }
+
+.home.company-guide {
+  transition: all 0.3s ease;
+}
+
+.home.company-guide:hover {
+  transform: scale(1.02);
+}
+
+.home.company-guide h3,
+.home.company-guide h5 {
+  text-align: left;
+}

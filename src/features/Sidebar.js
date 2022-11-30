@@ -66,7 +66,7 @@ export function Sidebar() {
             <div>
                 <a href="/" className='nav-item'>
                     <FeatherIcons icon='zap' size="16" />
-                    <b>Menta</b>
+                    <b>Menti</b>
                 </a>
                 
             </div>

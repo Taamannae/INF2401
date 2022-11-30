@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import ArticleCard from './features/ArticleCard/ArticleCard';
 import Masonry from 'react-masonry-css'
+import CompanyGuidePopup from './features/Dialog/CompanyGuidePopup';
 
 const ARTICLES = [
   {
@@ -130,6 +131,10 @@ const SESSIONS = [
 ]
 
 function App() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true)
+
   return (
     <div className='flex flex-column home-section'>
       <div className='flex home main-top'>
@@ -183,14 +188,14 @@ function App() {
       <div className='flex companies-guides'>
         {COMPANIES.map(item=>{
           return(
-            <div className='home company-guide flex align-center flex-1'>
+            <button onClick={handleShow} className='home company-guide flex align-center flex-1'>
               <div><img src={item.image} className="company-logo" alt=""/></div>
               <div>
 
                 <h3>{item.title}</h3>
                 <h5 className='flex align-center'>{item.company} · Verified <img src="./verified.svg" className='verified' alt="" /></h5>
               </div>
-            </div>
+            </button>
           )
         })}
 
@@ -200,7 +205,9 @@ function App() {
         <p className='flex-1 home-title'>General Articles & Advice</p>
         <a href="/articles" className='home-title-link'>See All</a>
       </div>
-
+      <CompanyGuidePopup
+        show={show}
+        handleClose={handleClose} />
       <Masonry
         breakpointCols={4}
         className="my-masonry-grid"

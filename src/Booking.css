@@ -1,6 +1,7 @@
 .booking .home.session-item {
     margin-top: 0;
     padding: 0;
+    background-color: var(--grey--600);
 }
 
 .booking .review-image {
@@ -66,4 +67,35 @@
 .booking-cancel:hover {
     color: #FF8585;
     background-color: #FF858522;
+}
+
+.home-title.feedbackTitle {
+    margin: 16px 0;
+}
+
+.booking-review-past{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.booking-review-past-brow {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 4px;
+
+    text-align: left;
+}
+
+.review-section {
+    grid-template-columns: repeat(3, 1fr) !important;
+     gap: 16px;
+     display: grid;
+}
+
+.div-card-avatar {
+    background-size: cover;
+    background-position: center;
 }

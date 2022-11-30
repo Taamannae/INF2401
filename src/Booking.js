@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import "./Booking.css"
 import JoinCall from './features/Dialog/JoinCall';
+import FeatherIcons from 'feather-icons-react'
 
 const SESSIONS = [
   {
@@ -31,6 +32,96 @@ const SESSIONS = [
     time: '1:00pm - 2:00pm'
   },
 ]
+
+const FEEDBACK_SESSION = [
+  {
+    sessionType: 'App Critique',
+    pic: "./mentor/ment4.png",
+    name: "Cody Fisher",
+    id: "2",
+    link: '/maincall',
+    date: 'Sat Nov 28th',
+    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
+    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+  }, {
+    sessionType: 'Whiteboarding',
+    pic: "./mentor/ment5.png",
+    name: "Annette Laue",
+    id: "2",
+    link: '/maincall',
+    date: 'Sat Nov 28th',
+    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
+    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+  }, {
+    sessionType: 'Portfolio Presentation',
+    pic: "./mentor/ment6.png",
+    name: "Leslie Alexander",
+    id: "2",
+    link: '/maincall',
+    date: 'Sat Nov 28th',
+    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
+    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+  }, {
+    sessionType: 'Whiteboarding',
+    pic: "./mentor/ment7.png",
+    name: "Guy Hawkins",
+    id: "2",
+    link: '/maincall',
+    date: 'Sat Nov 28th',
+    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
+    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+  }, {
+    sessionType: 'App Critique',
+    pic: "./mentor/ment8.png",
+    name: "Esther Howard",
+    id: "2",
+    link: '/maincall',
+    date: 'Sat Nov 28th',
+    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
+    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+  }, {
+    sessionType: 'Whiteboarding',
+    pic: "./mentor/ment9.png",
+    name: "Francisco Rivera",
+    id: "2",
+    link: '/maincall',
+    date: 'Sat Nov 28th',
+    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
+    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+  },
+]
+
+function Review(props) {
+  return(
+    <div className='booking-review-past'>
+      <div className="booking-confirm  mentor-book-prev-content review">
+        <div style={{ backgroundImage: `url('${props.item.pic}')` }} alt="" className="card-avatar div-card-avatar" />
+        <div>
+          <h5 className='booking-review-past-brow'>{props.item.sessionType}</h5>
+          <h3>{props.item.name}</h3>
+          <div className='flex mentor-stats'>
+            <div className='flex align-center'>
+              <FeatherIcons color="#979797" icon='calendar' size="16" />
+              <h5>{props.item.date}</h5>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='feedback-content'>
+        <p className='feedback-question'>How did the session go with Natalie Porsche?</p>
+
+        <p className='feedback-answer'>{props.item.feedback_1}</p>
+
+        <p className='feedback-question'>How could Natalie Porsche improve?</p>
+
+        <p className='feedback-answer'>{props.item.feedback_2}</p>
+
+      </div>
+    </div>
+  )
+}
 
 function Booking() {
   const [show, setShow] = useState(false);
@@ -89,6 +180,20 @@ function Booking() {
           })}
 
         </div>
+      <div className='flex flex-1'>
+        <p className='flex-1 home-title feedbackTitle'>Feedback from past sessions</p>
+      </div>
+
+      <div className='grid flex-1 review-section'>
+          {FEEDBACK_SESSION.map(item => {
+            return(
+              <Review item={item}/>
+            )
+          })}
+      </div>
+
+
+
       <JoinCall
         show={show}
         callType={callType}
