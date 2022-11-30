@@ -2,7 +2,6 @@ import React from 'react';
 import './Dialog.css';
 import Modal from 'react-bootstrap/Modal';
 import FeatherIcons from 'feather-icons-react';
-import { Button } from 'react-bootstrap';
 
 
 function EntireScreen(props) {
@@ -19,11 +18,11 @@ function EntireScreen(props) {
                 </div>
                 <div className='preview-container'>
                     <div className='flex flex-column shared-screen active'>
-                        <img src="./desk1.png"/>
+                        <img src="./desk1.png" alt="" />
                         Desktop 1
                     </div>
                     <div className='flex flex-column shared-screen'>
-                        <img src="./desk2.png" />
+                        <img src="./desk2.png" alt="" />
                         Desktop 2
                     </div>
                 </div>

@@ -57,7 +57,7 @@ function MainCall() {
         </div>
       </div>
       <div className='main-call-video-container flex'>
-        {showPhoneScreen && <img src="./phone-share.png" />}
+        {showPhoneScreen && <img src="./phone-share.png" alt=""/>}
         
         <div className='main-call-video' style={{backgroundImage:"url('./mentor/main-caller.jpg')"}}>
           <div className='main-caller-name'>
