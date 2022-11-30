@@ -39,6 +39,25 @@
   height: calc(100% - 85px);
 }
 
+.end-call-btn {
+  background-color: #ca4141;
+}
+
+.notif-red-dot {
+  background-color: #ca4141;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  
+}
+
+.header-right-section .edit-icons-notif {
+  position: relative;
+}
+
 .main-call-header h3 {
   font-family: 'Graphik';
     font-style: normal;
@@ -362,4 +381,8 @@ background: rgb(23, 24, 27);
 .shared-screen.active{
   background: none !important;
   border-color: var(--white);
+}
+
+.share-screen-active {
+  background: var(--white);
 }

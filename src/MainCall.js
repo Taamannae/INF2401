@@ -46,6 +46,9 @@ function MainCall() {
         </div>
         <h3>Mentorship Session | Jane Cooper</h3>
         <div className='social'>
+          <a href="/booking" className='nav-header-item participants end-call'>
+            <FeatherIcons icon={'phone-off'} size="16" /> Leave Call
+          </a>
           <a href="#/" className='nav-header-item participants'>
             <FeatherIcons icon={'message-circle'} size="16" />
           </a>
@@ -71,7 +74,10 @@ function MainCall() {
             <div className='main-call-options'>
             <button className='model-close' onClick={''}><FeatherIcons color="white" icon="mic" /></button>
             <button className='model-close' onClick={''}><FeatherIcons color="white" icon="video" /></button>
-                <button className='model-close' onClick={() => setShow(!show)} ref={target} ><FeatherIcons color="white" icon="share" /></button>
+                {showPhoneScreen && <button className='model-close share-screen-active' onClick={() => setShowPhoneScreen(false)}><FeatherIcons color="black" icon="share" /></button>}
+
+
+                {!showPhoneScreen && <button className='model-close' onClick={() => setShow(!show)} ref={target} ><FeatherIcons color="white" icon="share" /></button>}
 
                 <Overlay target={target.current} show={show} placement="top">
                   {(props) => (
@@ -98,7 +104,7 @@ function MainCall() {
                   )}
                 </Overlay>
 
-            <a href="/booking" className='model-close'><FeatherIcons color="white" icon="phone-off" /></a>
+            <a href="/booking" className='model-close end-call-btn'><FeatherIcons color="white" icon="phone-off" /></a>
             </div>
           </div>
 

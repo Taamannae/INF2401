@@ -132,7 +132,7 @@ export default function Header() {
             <div className='header-right-section'>
                 {navButton('search')}
 
-                <button ref={target} onClick={() => setShow(!show)} className='edit-icons-notif'>{navButton('bell')}</button>
+                <button ref={target} onClick={() => setShow(!show)} className='edit-icons-notif'>{navButton('bell')} <div className='notif-red-dot'/></button>
                 <Overlay target={target.current} show={show} placement="bottom">
                     {(props) => (
                         <Tooltip className="notification-cont"  id="overlay-example" {...props}>

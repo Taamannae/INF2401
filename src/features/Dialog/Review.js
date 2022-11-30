@@ -39,6 +39,9 @@ function Review(props) {
                     <p className='feedback-answer'>Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?</p>
 
                 </div>
+                <div className='join-entire-call-footer flex'>
+                    <a href="/booking" className="booking-button ">View All Feedback</a>
+                </div>
 
             </div>
             </Modal>
