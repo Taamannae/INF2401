@@ -64,3 +64,15 @@
 .menu-open {
     display: none;
 }
+
+.artical-link {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.artical-link:hover {
+    transform: scale(1.02);
+
+}

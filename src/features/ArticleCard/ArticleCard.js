@@ -3,7 +3,7 @@ import './ArticleCard.css';
 
 function ArticleCard(props) {
     return (
-        <div>
+        <a href={props.link} rel="noreferrer" target="_blank" className='artical-link'>
             <div className='article-card'>
                 <div alt="" className="card-bg" style={{ backgroundImage: `url("${props.bgImage}"`, height: props.bgHeight}} />
                 <div className='menu'>
@@ -31,7 +31,7 @@ function ArticleCard(props) {
 
                 </div>
             </div>
-        </div>
+        </a>
     );
 }
 

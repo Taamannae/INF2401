@@ -37,7 +37,7 @@ const FEEDBACK_SESSION = [
   {
     sessionType: 'App Critique',
     pic: "./mentor/ment4.png",
-    name: "Cody Fisher",
+    name: "Annette Laue",
     id: "2",
     link: '/maincall',
     date: 'Sat Nov 28th',
@@ -46,12 +46,12 @@ const FEEDBACK_SESSION = [
   }, {
     sessionType: 'Whiteboarding',
     pic: "./mentor/ment5.png",
-    name: "Annette Laue",
+    name: "Darlene Robertson",
     id: "2",
     link: '/maincall',
     date: 'Sat Nov 28th',
-    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
-    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+    feedback_1: 'This session with Natalie went great! She was very collaborative and wasn’t afraid to ask me further questions to get a better understanding of the problem. She does a great job at breaking the problem down, defining the target user, and ideating on potential solutions',
+    feedback_2: '...'
   }, {
     sessionType: 'Portfolio Presentation',
     pic: "./mentor/ment6.png",
@@ -59,8 +59,8 @@ const FEEDBACK_SESSION = [
     id: "2",
     link: '/maincall',
     date: 'Sat Nov 28th',
-    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
-    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+    feedback_1: 'Natalie asked some really insightful and well crafted questions during my session with her, not only did she come prepared, but she generated questions on the fly based on the conversation we were having.',
+    feedback_2: 'Natalie should take some time to explore UI design principles more. She should look into laws of UX, gain a better understanding of grids, typography, and whitespace.'
   }, {
     sessionType: 'Whiteboarding',
     pic: "./mentor/ment7.png",
@@ -68,8 +68,8 @@ const FEEDBACK_SESSION = [
     id: "2",
     link: '/maincall',
     date: 'Sat Nov 28th',
-    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
-    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+    feedback_1: '...',
+    feedback_2: '...'
   }, {
     sessionType: 'App Critique',
     pic: "./mentor/ment8.png",
@@ -77,8 +77,8 @@ const FEEDBACK_SESSION = [
     id: "2",
     link: '/maincall',
     date: 'Sat Nov 28th',
-    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
-    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+    feedback_1: '...',
+    feedback_2: '...'
   }, {
     sessionType: 'Whiteboarding',
     pic: "./mentor/ment9.png",
@@ -86,8 +86,8 @@ const FEEDBACK_SESSION = [
     id: "2",
     link: '/maincall',
     date: 'Sat Nov 28th',
-    feedback_1: 'Mentoring Natalia was wonderful. She’s incredibly smart and receptive designer with a lot of growth potential. I really love her attitude and passion towards design!',
-    feedback_2: 'Moving forward, Natalie should focus on digging deeper into the problems that she is trying to solve for. Think about the why. Why is this person experiencing this problem? Is this a symptom of a larger problem?'
+    feedback_1: '...',
+    feedback_2: '...'
   },
 ]
 
