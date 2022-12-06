@@ -4,6 +4,8 @@ import FeatherIcons from 'feather-icons-react'
 import Dialog from '../features/Dialog/Dialog';
 import Mentor from '../features/Dialog/Mentor';
 import MentorConfirm from '../features/Dialog/MentorConfirm';
+import { Form } from 'react-bootstrap';
+import FeatherIcon from 'feather-icons-react/build/FeatherIcon';
 
 
 const ARTICLES = [
@@ -120,6 +122,20 @@ function Mentors() {
   const [show, setShow] = useState(false);
   const [showMentor, setShowMentor] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
+  const [searchText, setSearchText] = useState('');
+
+  const [result, setResult] = useState(ARTICLES);
+
+
+  const checkSearch = (compare, item)=> {
+    return item.name.toLowerCase().includes(compare.toLowerCase()) || item.company.toLowerCase().includes(compare.toLowerCase());
+  }
+
+  const handleSearch = async e => {
+    e.preventDefault();
+    await setSearchText(e.target.value);
+    await setResult(ARTICLES.filter(checkSearch.bind(this, e.target.value)))
+  }
 
   const handleClose = () => setShow(false);
   const handleShow = () => {
@@ -141,9 +157,21 @@ function Mentors() {
   };
   return (
     <div>
+      <div className="flex search-section">
+        <div className='flex-1 p-relative'>
+          <Form.Control type="text" className="search-text" placeholder="Search" value={searchText} onChange={handleSearch} />
+          <div className='search-icon'><FeatherIcon icon="search" size="16px" /></div>
+
+        </div>
+
+        <div className="flex-1 flex search-buttons-side">
+          <button><FeatherIcon icon="filter" size="16px"/></button>
+          <button><FeatherIcon icon="arrow-up" size="16px" /></button>
+        </div>
+      </div>
     <div className='mentors-cont'>
       {
-        ARTICLES.map(item => {
+          result.map(item => {
         return(mentor(item.bgImage, item.name, item.role, item.company, item.yoe, handleShow)
 
         )

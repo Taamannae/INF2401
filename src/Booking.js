@@ -134,7 +134,7 @@ function Booking() {
 
   return (
     <div className='booking flex flex-column'>
-      <div className='flex home main-top'>
+      <div className='flex home main-top booking-spacer'>
           {SESSIONS.map(item=> {
             return(
               <div className='home flex-1 flex flex-column session-item'>

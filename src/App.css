@@ -277,3 +277,64 @@ h3 {
 .home.company-guide h5 {
   text-align: left;
 }
+
+.search-section {
+  margin-bottom: 16px;
+}
+
+.search-text {
+  background-color: var(--grey--600);
+  border: 1px solid var(--grey--500);
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--white);
+}
+
+.search-text::placeholder {
+  color: var(--grey--300);
+}
+
+.search-buttons-side {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.search-buttons-side button {
+ background-color: var(--grey--600);
+ padding: 12px;
+ border: 1px solid var(--border-color);
+ color: var(--white);
+ width: 50px;
+ height: 50px;
+ border-radius: 8px;
+}
+.search-text:focus {
+  background-color: var(--grey--700);
+  border-color: var(--border-color);
+  outline: none;
+  box-shadow: none;
+  color: var(--white);
+}
+
+.p-relative {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 16px;
+  color: white;
+}
+
+.subtle-title {
+  align-items: center;
+  margin-top: 32px;
+}

@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import ArticleCard from './features/ArticleCard/ArticleCard';
 import Masonry from 'react-masonry-css'
+import { Form } from 'react-bootstrap';
+import FeatherIcon from 'feather-icons-react/build/FeatherIcon';
 
 const ARTICLES = [
   {
@@ -98,13 +100,41 @@ const ARTICLES = [
 ]
 
 function Articles() {
+  const [searchText, setSearchText] = useState('');
+
+  const [result, setResult] = useState(ARTICLES);
+
+
+  const checkSearch = (compare, item) => {
+    return item.preview.toLowerCase().includes(compare.toLowerCase()) || item.title.toLowerCase().includes(compare.toLowerCase());
+  }
+
+  const handleSearch = async e => {
+    e.preventDefault();
+    await setSearchText(e.target.value);
+    await setResult(ARTICLES.filter(checkSearch.bind(this, e.target.value)))
+  }
+
   return (
+    <div>
+      <div className="flex search-section">
+        <div className='flex-1 p-relative'>
+          <Form.Control type="text" className="search-text" placeholder="Search" value={searchText} onChange={handleSearch} />
+          <div className='search-icon'><FeatherIcon icon="search" size="16px" /></div>
+
+        </div>
+
+        <div className="flex-1 flex search-buttons-side">
+          <button><FeatherIcon icon="filter" size="16px" /></button>
+          <button><FeatherIcon icon="arrow-up" size="16px" /></button>
+        </div>
+      </div>
       <Masonry
         breakpointCols={4}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column">
 
-        {ARTICLES.map(x => {
+        {result.map(x => {
           return(
             <ArticleCard
               authorImage={x.authorImage}
@@ -118,6 +148,7 @@ function Articles() {
         })}
 
       </Masonry>
+      </div>
   );
 }
 

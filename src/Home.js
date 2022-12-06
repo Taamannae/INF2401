@@ -192,7 +192,7 @@ function App() {
 
       </div>
 
-      <div className='flex flex-1'>
+      <div className='flex flex-1 subtle-title'>
         <p className='flex-1 home-title'>Company Interview Guides</p>
         <a href="/guide" className='home-title-link'>See All</a>
       </div>
@@ -213,7 +213,7 @@ function App() {
 
       </div>
 
-      <div className='flex flex-1'>
+      <div className='flex flex-1 subtle-title'>
         <p className='flex-1 home-title'>Popular Mentors</p>
         <a href="/mentors" className='home-title-link'>See All</a>
       </div>
